@@ -23,7 +23,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex flex-row justify-around py-4 px-32 bg-transparent gap-4">
-      <div className="flex flex-row gap items-center	">
+      <div className="flex flex-row gap items-center	leading-normal">
         <div className="mr-16">
         <Image alt="Website Logo" src={websiteLogo}  className="w-24 h-8"/> 
 
@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="flex flex-row gap-10 ">
         <ul className="flex gap-4">
           <div>
-            <li className="text-xs w-32 text-right text-[#262626]">
+            <li className="text-xs w-28 text-right text-[#262626]">
             For 18 years and above only.
           </li>
           </div>

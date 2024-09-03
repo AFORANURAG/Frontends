@@ -48,7 +48,7 @@ export default   function Page(): JSX.Element {
 
   return (
  <>
-<div className="bg-white border-2">
+<div className="bg-white border-2 font-sans">
         <Navbar />  
         <SectionOne/>
 </div>
