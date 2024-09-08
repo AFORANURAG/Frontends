@@ -5,7 +5,7 @@ export default function SectionOne(): JSX.Element {
   return (
     <section className="">
       <div
-        className="bg-no-repeat  bg-bottom bg-SectionOneRightBGRight font-sans"
+        className="bg-no-repeat  bg-bottom bg-SectionOneRightBGRight font-sans min-h-[500px] h-[600px]"
       >
         <div className="flex flex-row justify-around ml-36 mt-4">
           {/** 
@@ -40,13 +40,13 @@ export default function SectionOne(): JSX.Element {
           </div>
 
 
-          <div className="bg-transparent pt-16">
+          <div className="bg-transparent pt-4">
             <span>
               <span>
                 <span>
                   {/* <Image src={SectionOneRightTransparentBG} alt="SectionOneRightBG"/> */}
                 </span>
-                <Image alt="SectionOneRight" className="mr-48 box-border" width={600}   src={SectionOneRight} />
+                <Image alt="SectionOneRight" className="mr-48 box-border" width={580}  src={SectionOneRight} />
               </span>
 
             </span>

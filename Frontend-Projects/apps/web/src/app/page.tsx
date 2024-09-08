@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Card } from "@repo/ui/card";
 import Navbar from "./components/homePageComponents/Navbar";
 import SectionOne from "./components/homePageComponents/SectionOne"
+import SectionTwo from "./components/homePageComponents/SectionTwo";
+import SectionThree from "./components/homePageComponents/SectionThree";
 function Gradient({
   conic,
   className,
@@ -50,7 +52,9 @@ export default   function Page(): JSX.Element {
  <>
 <div className="bg-white font-sans bg-[#f5f5f5] box-border">
         <Navbar />  
-        <SectionOne/>
+        <SectionOne />
+        <SectionTwo />
+        <SectionThree/>
 </div>
  </>
   );
