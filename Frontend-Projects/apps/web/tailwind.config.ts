@@ -2,7 +2,7 @@
 
 import type { Config } from "tailwindcss";
 import sharedConfig from "@repo/tailwind-config";
-const plugin = require("tailwindcss/plugin");
+import plugin from "tailwindcss/plugin";
 
 const config: Pick<Config, "content" | "presets" | "theme" | "plugins"> = {
   content: ["./src/app/**/*.tsx"],
