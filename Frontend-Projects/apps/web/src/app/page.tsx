@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card } from "@repo/ui/card";
 import Navbar from "./components/homePageComponents/Navbar";
-import SectionOne from "./components/homePageComponents/SectionOne"
+import SectionOne from "./components/homePageComponents/SectionOne";
 import SectionTwo from "./components/homePageComponents/SectionTwo";
 import SectionThree from "./components/homePageComponents/SectionThree";
 function Gradient({
@@ -46,16 +46,15 @@ const LINKS = [
   },
 ];
 
-export default   function Page(): JSX.Element {
-
+export default function Page(): JSX.Element {
   return (
- <>
-<div className="bg-white font-sans bg-[#f5f5f5] box-border">
-        <Navbar />  
+    <>
+      <div className="bg-white font-sans bg-[#f5f5f5] box-border">
+        <Navbar />
         <SectionOne />
         <SectionTwo />
-        <SectionThree/>
-</div>
- </>
+        <SectionThree />
+      </div>
+    </>
   );
 }
