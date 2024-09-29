@@ -4,56 +4,22 @@ import Navbar from "./components/homePageComponents/Navbar";
 import SectionOne from "./components/homePageComponents/SectionOne";
 import SectionTwo from "./components/homePageComponents/SectionTwo";
 import SectionThree from "./components/homePageComponents/SectionThree";
-function Gradient({
-  conic,
-  className,
-  small,
-}: {
-  small?: boolean;
-  conic?: boolean;
-  className?: string;
-}): JSX.Element {
-  return (
-    <span
-      className={`absolute mix-blend-normal will-change-[filter] rounded-[100%] ${
-        small ? "blur-[32px]" : "blur-[75px]"
-      } ${conic ? "bg-glow-conic" : ""} ${className}`}
-    />
-  );
-}
+import SectionFour from "./components/homePageComponents/SectionFour";
+import SectionFive from "./components/homePageComponents/SectionFive";
+import SectionSix from "./components/homePageComponents/SectionSix";
 
-const LINKS = [
-  {
-    title: "Docs",
-    href: "https://turbo.build/repo/docs",
-    description: "Find in-depth information about Turborepo features and API.",
-  },
-  {
-    title: "Learn",
-    href: "https://turbo.build/repo/docs/handbook",
-    description: "Learn more about monorepos with our handbook.",
-  },
-  {
-    title: "Templates",
-    href: "https://turbo.build/repo/docs/getting-started/from-example",
-    description: "Choose from over 15 examples and deploy with a single click.",
-  },
-  {
-    title: "Deploy",
-    href: "https://vercel.com/new",
-    description:
-      "Instantly deploy your Turborepo to a shareable URL with Vercel.",
-  },
-];
 
 export default function Page(): JSX.Element {
   return (
     <>
-      <div className="bg-white font-sans bg-[#f5f5f5] box-border">
+      <div className="font-sans bg-[#f5f5f5] box-border">
         <Navbar />
         <SectionOne />
         <SectionTwo />
         <SectionThree />
+        <SectionFour/>
+        <SectionFive/>
+        <SectionSix/>
       </div>
     </>
   );

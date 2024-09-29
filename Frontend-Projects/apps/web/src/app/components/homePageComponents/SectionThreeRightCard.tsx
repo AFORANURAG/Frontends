@@ -11,7 +11,7 @@ export default function SectionThreeRightCard(props: {
 }): JSX.Element {
   const { src, noAmount, opinion, numberOfTraders, yesAmount } = props;
   return (
-    <div className="border-[1px] max-w-[300px] mx-auto text-center flex flex-col min-h-[270px] p-[16px] rounded-md shadow-4xl pl-4 bg-[#ffffff]">
+    <div className="border-[1px] max-w-[300px] mx-auto text-center flex flex-col min-h-[280px] p-[16px] rounded-md shadow-4xl pl-4 bg-[#ffffff]">
       <div>
         <span>
           <Image alt="image1SectionThreeRight" src={src} />
@@ -35,7 +35,7 @@ export default function SectionThreeRightCard(props: {
         {opinion}
       </div>
 
-      <div className="flex flex-1 flex-row  gap-4 justify-around mt-8">
+      <div className="flex flex-1 flex-row  gap-4 justify-around">
         {/* <div className="bg-[#197bff]  bg-[linear-gradient(104.13deg,_hsla(0,_0%,_100%,_.25)_3.11%,_rgba(94,_163,_255,_.125)_34.12%),_#e8f2ff]" id='btn_1'> */}
         <button
           className="text-[14px] leading-5	rounded-md	 px-[32px] py-[12px] font-semibold"

@@ -19,6 +19,11 @@ const config: Pick<Config, "content" | "presets" | "theme" | "plugins"> = {
       },
       backgroundImage: {
         SectionOneRightBGRight: "url('/SectionOneBG.svg')",
+        ReadMoreArrow: "url('/arrow-right.svg')",
+        SectionFourFirstCardBg: "url(/SECTIONFOURIMAGE1.jpg)",
+        SectionFourSecondCardBg: "url(/SECTIONFOURIMAGE2.jpg)",
+        SectionFourThirdCardBg: "url(/SECTIONFOURIMAGE3.jpg)",
+        SectionFourFourthCardBg: "url(/SECTIONFOURIMAGEFOUR.jpg)",
         SectionThreeRightCard:
           "linear-gradient(104.13deg,hsla(0,0%,100%,.25) 3.11%,rgba(94,163,255,.125) 34.12%),#e8f2ff",
       },

@@ -78,25 +78,23 @@ const cardsData: Array<{
 ];
 export default function SectionThree(): JSX.Element {
   return (
-    <section className="bg-[#f5f5f5]">
+    <section className="bg-[#f5f5f5] max-h-[570px]">
       <div className="mx-auto max-w-[1440px] py-[32px] ">
-        <div className="w-full flex flex-row">
-          <div className="flex flex-col w-6/12 justify-center min-h-[625px] max-h-[625px]">
-            <div className="font-semibold text-[84px] text-[#262626] leading-[80px]">
+        <div className="w-full flex flex-row gap-x-10">
+          <div className="flex flex-col w-2/6 justify-center min-h-[625px] max-h-[625px] ml-8">
+            <div className="font-semibold text-[84px] text-[#262626] leading-[100px]">
               Trade when you like,
             </div>
 
-            <div className="text-[48px] text-left font-semibold">
+            <div className="text-[48px] text-left font-semibold text-[#262626] mt-4 tracking-wide">
               on what you like.
             </div>
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-2 gap-4 overflow-y-auto max-h-[500px] scrollbar-hide">
+          <div className="grid grid-cols-2 gap-4 overflow-y-auto max-h-[500px] scrollbar-hide ml-48">
             {cardsData.map((cardData, index) => (
-              <>
-                <SectionThreeRightCard key={index} {...cardData} />
-              </>
+              <SectionThreeRightCard key={index} {...cardData} />
             ))}
           </div>
         </div>
