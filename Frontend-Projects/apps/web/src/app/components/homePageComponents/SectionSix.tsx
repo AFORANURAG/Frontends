@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import SECTIONSIXOPENQUOTES from "../../../../public/SECTIONSIXOPENQUOTES.png";
 import SECTIONSIXCLOSEQUOTES from "../../../../public/CLOSINGQUOTES.png";
-import SECTIONSIXIMAGEONE from "../../../../public/SECTIONSIXIMAGE1.png";
-import SECTIONSIXIMAGETWO from "../../../../public/SECTIONSIXIMAGE2.png";
-import SECTIONSIXIMAGETHREE from "../../../../public/SECTIONSIXIMAGE3.png";
-import SECTIONSIXIMAGEFOUR from "../../../../public/SECTIONSIXIMAGE4.png";
+import SECTIONSIXIMAGEONE from "../../../../public/nazar-no-bg.png";
+import SECTIONSIXIMAGETWO from "../../../../public/khabar-no-bg.png";
+import SECTIONSIXIMAGETHREE from "../../../../public/jigar-no-bg.png";
+import SECTIONSIXIMAGEFOUR from "../../../../public/sabar-no-bg.png";
 import SectionSixCard from "./SectionSixCards";
 
 const sectionSixCardsContent: Array<{

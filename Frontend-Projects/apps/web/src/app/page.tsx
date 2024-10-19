@@ -6,9 +6,7 @@ import SectionTwo from "./components/homePageComponents/SectionTwo";
 import SectionThree from "./components/homePageComponents/SectionThree";
 import SectionFour from "./components/homePageComponents/SectionFour";
 import SectionFive from "./components/homePageComponents/SectionFive";
-import SectionSix from "./components/homePageComponents/SectionSix";
-
-
+import SectionSeven from "./components/homePageComponents/SectionSeven";
 export default function Page(): JSX.Element {
   return (
     <>
@@ -17,9 +15,10 @@ export default function Page(): JSX.Element {
         <SectionOne />
         <SectionTwo />
         <SectionThree />
-        <SectionFour/>
-        <SectionFive/>
-        <SectionSix/>
+        <SectionFour />
+        <SectionFive />
+        <SectionSeven />
+        {/* <SectionSix/> */}
       </div>
     </>
   );
