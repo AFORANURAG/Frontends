@@ -1,21 +1,43 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import TradingView from "../../../../public/trading-view-sectionten1.jpeg";
-import AuthBridge from "../../../../public/authbridge_section_ten_logo_2-no-bg.png";
-import Datamuni from "../../../../public/datamuni_section_10_logo_3-no-bg.png";
-import GoogleCloud from "../../../../public/google-cloud_section_ten_logo_4-no-bg.png";
-import Firebase from "../../../../public/google-firebase_section_ten_logo_5-no-bg.png";
+import LINKEDINIMAGE from "../../../../public/linkedin.png";
+import TWITTERIMAGE from "../../../../public/x.png";
+import INSTAGRAM from "../../../../public/instagram.png";
+import YOUTUBE from "../../../../public/youtube.png";
+import Link from "next/link";
 const rightSection: Array<{
   titleImageSrc: StaticImageData;
-  title: string;
+  divContent: string;
 }> = [
-  { title: "Trading View", titleImageSrc: TradingView },
-  { title: "AuthBridge", titleImageSrc: AuthBridge },
-  { title: "Datamuni", titleImageSrc: Datamuni },
-  { title: "Google Cloud", titleImageSrc: GoogleCloud },
-  { title: "Google Firebase", titleImageSrc: Firebase },
+  { divContent: "LinkedIn", titleImageSrc: LINKEDINIMAGE },
+  { divContent: "Twitter", titleImageSrc: TWITTERIMAGE },
+  { divContent: "Instagram", titleImageSrc: INSTAGRAM },
+  { divContent: "Youtube", titleImageSrc: YOUTUBE },
 ];
 export default function SectionEleven() {
-  return <section className="bg-[#f5f5f5] pt-4"></section>;
+  return (
+    <section className="bg-[#f5f5f5] ">
+      <div className="flex flex-row justify-center gap-x-8 h-[100px] py-2">
+        {rightSection.map((link) => {
+          return (
+            <div className="flex flex-row">
+              <Link href={"www.linkedIn.com"}>
+                <span>
+                  <Image
+                    src={link.titleImageSrc}
+                    alt={`${link.divContent}Image`}
+                  />
+                </span>
+              </Link>
+              <div className="inline font-[600] mt-[12px] ml-4">
+                {link.divContent}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="h-[1px] container mx-auto bg-gray-300  "></div>
+    </section>
+  );
 }

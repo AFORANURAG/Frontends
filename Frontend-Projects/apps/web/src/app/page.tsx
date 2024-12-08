@@ -11,6 +11,9 @@ import { Work_Sans } from "next/font/google";
 import SectionEight from "./components/homePageComponents/SectionEight";
 import SectionNine from "./components/homePageComponents/SectionNine";
 import SectionTen from "./components/homePageComponents/SectionTen";
+import SectionEleven from "./components/homePageComponents/SectionEleven";
+import SectionTwelve from "./components/homePageComponents/SectionTwelve";
+import SectionThirteen from "./components/homePageComponents/SectionThirteen";
 const workSans = Work_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"], // Adjust weights as needed
@@ -30,6 +33,9 @@ export default function Page(): JSX.Element {
         {/* <SectionSix/> */}
         <SectionNine />
         <SectionTen />
+        <SectionEleven />
+        <SectionTwelve />
+        <SectionThirteen />
       </div>
     </>
   );

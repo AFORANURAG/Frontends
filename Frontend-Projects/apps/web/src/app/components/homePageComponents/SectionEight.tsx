@@ -62,9 +62,9 @@ const RIGHT_SIDE_LINKS: Array<{
 export default function SectionEight() {
   const pathname = usePathname();
   return (
-    <section className="">
-      <div className="sticky z-50 bg-[#f5f5f5] pt-8">
-        <div className="flex flex-row justify-around py-4 px-32  gap-4">
+    <section className="bg-[#f5f5f5]">
+      <div className="sticky z-50 bg-[#f5f5f5] pt-8 w-4/5 mx-auto">
+        <div className="flex flex-row justify-between py-4   gap-4">
           <div className="flex flex-row gap items-center	leading-normal ">
             <div className="mr-16">
               <Image
@@ -95,7 +95,7 @@ export default function SectionEight() {
           </div>
         </div>
       </div>
-      <div className="h-[1px] container mx-auto bg-gray-300 my-4"></div>
+      <div className="h-[1px] container mx-auto bg-gray-300"></div>
     </section>
   );
 }

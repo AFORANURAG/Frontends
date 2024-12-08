@@ -18,7 +18,7 @@ const rightSection: Array<{
 ];
 export default function SectionTen() {
   return (
-    <section className="bg-[#f5f5f5] pt-4">
+    <section className="bg-[#f5f5f5] py-8">
       <div className="flex flex-row container mx-auto justify-between">
         <div className="w-1/2">
           <h2 className="font-semibold ">Probo Partnerships</h2>
@@ -45,7 +45,7 @@ export default function SectionTen() {
           )}
         </div>
       </div>
-      <div className="h-[1px] container mx-auto bg-gray-300 my-4"></div>
+      <div className="h-[1px] container mx-auto bg-gray-300 "></div>
     </section>
   );
 }

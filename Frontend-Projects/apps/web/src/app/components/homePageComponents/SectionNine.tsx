@@ -56,7 +56,7 @@ export default function SectionNine() {
           );
         })}
       </div>
-      <div className="h-[1px] container mx-auto bg-gray-300 my-4"></div>
+      <div className="h-[1px] container mx-auto bg-gray-300"></div>
     </section>
   );
 }

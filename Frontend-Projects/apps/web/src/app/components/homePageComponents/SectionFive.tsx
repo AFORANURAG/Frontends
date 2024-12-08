@@ -39,12 +39,14 @@ const sectionFiveCardsContent: Array<{
 
 export default function SectionFive(): JSX.Element {
   return (
-    <section >
+    <section>
       <div className="flex flex-col w-4/5 m-auto justify-end  content-end mt-8 pl-24 gap-y-20">
         <div>
-          <div className="text-[64px] font-semibold leading-[80px]">Probo takes care of you,
-             <br />
-             so you take care of your trades.</div>
+          <div className="text-[64px] font-semibold leading-[80px]">
+            Probo takes care of you,
+            <br />
+            so you take care of your trades.
+          </div>
           <div></div>
         </div>
 

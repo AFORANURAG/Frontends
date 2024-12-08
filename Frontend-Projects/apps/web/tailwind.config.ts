@@ -3,14 +3,18 @@
 import type { Config } from "tailwindcss";
 import sharedConfig from "@repo/tailwind-config";
 import plugin from "tailwindcss/plugin";
-
+// import { Work_Sans } from "next/font/google";
+// const workSans = Work_Sans({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700", "800"], // Adjust weights as needed
+// });
 const config: Pick<Config, "content" | "presets" | "theme" | "plugins"> = {
   content: ["./src/app/**/*.tsx"],
   presets: [sharedConfig], // Ensure sharedConfig is valid Tailwind config
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Work Sans"', "sans-serif"],
+        sans: ["var(--font-work-sans)", "sans-serif"],
       },
       boxShadow: {
         "3xl":
